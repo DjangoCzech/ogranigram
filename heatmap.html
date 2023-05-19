@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ukázka heatmapy</title>
+    <script src="https://cdn.anychart.com/releases/8.11.1/js/anychart-base.min.js"></script>
+    <script src="https://cdn.anychart.com/releases/8.11.1/js/anychart-heatmap.min.js"></script>
+
+    <style type="text/css">
+      html,
+      body,
+      #container {
+        width: 100%;
+        height: 100%;
+        margin: 0px;
+        padding: 0px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container"></div>
+    <script>
+      anychart.onDocumentReady(function () {
+        //create a  heatmap
+        let chart = anychart.heatMap(getData());
+        //name the chart
+        chart.title("Ukázka heatmapy");
+        //set the container for the heatmap
+        chart.container("container");
+        //draw the heatmap
+        chart.draw();
+      });
+
+      function getData() {
+        return [
+          {
+            x: "Pondělí",
+            y: "Midnight–3:59 a.m.",
+            heat: 705,
+          },
+          {
+            x: "Pondělí",
+            y: "4:00–7:59 a.m.",
+            heat: 713,
+          },
+          {
+            x: "Pondělí",
+            y: "8:00–11:59 a.m.",
+            heat: 657,
+          },
+          {
+            x: "Pondělí",
+            y: "Noon–3:59 p.m.",
+            heat: 957,
+          },
+          {
+            x: "Pondělí",
+            y: "4:00–7:59 p.m.",
+            heat: 1137,
+          },
+          {
+            x: "Pondělí",
+            y: "8:00–11:59 p.m.",
+            heat: 956,
+          },
+          {
+            x: "Úterý",
+            y: "Midnight–3:59 a.m.",
+            heat: 482,
+          },
+          {
+            x: "Úterý",
+            y: "4:00–7:59 a.m.",
+            heat: 641,
+          },
+          {
+            x: "Úterý",
+            y: "8:00–11:59 a.m.",
+            heat: 631,
+          },
+          {
+            x: "Úterý",
+            y: "Noon–3:59 p.m.",
+            heat: 905,
+          },
+          {
+            x: "Úterý",
+            y: "4:00–7:59 p.m.",
+            heat: 1137,
+          },
+          {
+            x: "Úterý",
+            y: "8:00–11:59 p.m.",
+            heat: 986,
+          },
+          {
+            x: "Středa",
+            y: "Midnight–3:59 a.m.",
+            heat: 465,
+          },
+          {
+            x: "Středa",
+            y: "4:00–7:59 a.m.",
+            heat: 616,
+          },
+          {
+            x: "Středa",
+            y: "8:00–11:59 a.m.",
+            heat: 627,
+          },
+          {
+            x: "Středa",
+            y: "Noon–3:59 p.m.",
+            heat: 914,
+          },
+          {
+            x: "Středa",
+            y: "4:00–7:59 p.m.",
+            heat: 1159,
+          },
+          {
+            x: "Středa",
+            y: "8:00–11:59 p.m.",
+            heat: 1066,
+          },
+          {
+            x: "Čtvrtek",
+            y: "Midnight–3:59 a.m.",
+            heat: 584,
+          },
+          {
+            x: "Čtvrtek",
+            y: "4:00–7:59 a.m.",
+            heat: 718,
+          },
+          {
+            x: "Čtvrtek",
+            y: "8:00–11:59 a.m.",
+            heat: 660,
+          },
+          {
+            x: "Čtvrtek",
+            y: "Noon–3:59 p.m.",
+            heat: 966,
+          },
+          {
+            x: "Čtvrtek",
+            y: "4:00–7:59 p.m.",
+            heat: 1161,
+          },
+          {
+            x: "Čtvrtek",
+            y: "8:00–11:59 p.m.",
+            heat: 1186,
+          },
+          {
+            x: "Pátek",
+            y: "Midnight–3:59 a.m.",
+            heat: 715,
+          },
+          {
+            x: "Pátek",
+            y: "4:00–7:59 a.m.",
+            heat: 747,
+          },
+          {
+            x: "Pátek",
+            y: "8:00–11:59 a.m.",
+            heat: 738,
+          },
+          {
+            x: "Pátek",
+            y: "Noon–3:59 p.m.",
+            heat: 1056,
+          },
+          {
+            x: "Pátek",
+            y: "4:00–7:59 p.m.",
+            heat: 1426,
+          },
+          {
+            x: "Pátek",
+            y: "8:00–11:59 p.m.",
+            heat: 1631,
+          },
+          {
+            x: "Sobota",
+            y: "Midnight–3:59 a.m.",
+            heat: 1383,
+          },
+          {
+            x: "Sobota",
+            y: "4:00–7:59 a.m.",
+            heat: 641,
+          },
+          {
+            x: "Sobota",
+            y: "8:00–11:59 a.m.",
+            heat: 635,
+          },
+          {
+            x: "Sobota",
+            y: "Noon–3:59 p.m.",
+            heat: 1034,
+          },
+          {
+            x: "Sobota",
+            y: "4:00–7:59 p.m.",
+            heat: 1400,
+          },
+          {
+            x: "Sobota",
+            y: "8:00–11:59 p.m.",
+            heat: 1593,
+          },
+          {
+            x: "Neděle",
+            y: "Midnight–3:59 a.m.",
+            heat: 1486,
+          },
+          {
+            x: "Neděle",
+            y: "4:00–7:59 a.m.",
+            heat: 695,
+          },
+          {
+            x: "Neděle",
+            y: "8:00–11:59 a.m.",
+            heat: 564,
+          },
+          {
+            x: "Neděle",
+            y: "Noon–3:59 p.m.",
+            heat: 932,
+          },
+          {
+            x: "Neděle",
+            y: "4:00–7:59 p.m.",
+            heat: 1292,
+          },
+          {
+            x: "Neděle",
+            y: "8:00–11:59 p.m.",
+            heat: 1211,
+          },
+        ];
+      }
+    </script>
+  </body>
+</html>
